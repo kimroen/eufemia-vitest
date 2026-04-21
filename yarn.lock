@@ -120,7 +120,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dnb/eufemia-vitest@workspace:packages/eufemia-vitest"
   dependencies:
-    "@dnb/eufemia": "npm:^10.104.1"
+    "@dnb/eufemia": "https://pkg.pr.new/@dnb/eufemia@5606.tgz"
     "@dnb/shared-lib": ../shared-lib/package.tgz
     "@testing-library/dom": "npm:^9.3.4"
     "@testing-library/jest-dom": "npm:6.4.2"
@@ -132,34 +132,35 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dnb/eufemia@npm:^10.104.1":
-  version: 10.104.1
-  resolution: "@dnb/eufemia@npm:10.104.1"
+"@dnb/eufemia@https://pkg.pr.new/@dnb/eufemia@5606.tgz":
+  version: 0.0.0-development
+  resolution: "@dnb/eufemia@https://pkg.pr.new/@dnb/eufemia@5606.tgz"
   dependencies:
     "@babel/runtime-corejs3": "npm:7.28.4"
+    "@maskito/core": "npm:5.1.0"
+    "@maskito/kit": "npm:5.1.0"
+    "@maskito/react": "npm:5.1.0"
     "@modelcontextprotocol/sdk": "npm:1.26.0"
     "@navikt/fnrvalidator": "npm:2.1.5"
     "@ungap/structured-clone": "npm:1.2.0"
     ajv: "npm:8.18.0"
     ajv-errors: "npm:3.0.0"
-    classnames: "npm:2.5.1"
+    clsx: "npm:2.1.1"
     core-js-pure: "npm:3.47.0"
     date-fns: "npm:4.1.0"
     postcss-selector-parser: "npm:7.1.0"
-    prop-types: "npm:15.8.1"
-    what-input: "npm:5.2.12"
     zod: "npm:4.1.8"
   peerDependencies:
-    "@types/react": ^17 || ^18
-    "@types/react-dom": ^17 || ^18
-    react: ^17 || ^18
-    react-dom: ^17 || ^18
+    "@types/react": ^19
+    "@types/react-dom": ^19
+    react: ^19
+    react-dom: ^19
   peerDependenciesMeta:
     "@types/react":
       optional: true
     "@types/react-dom":
       optional: true
-  checksum: 10c0/afef73bb6f338b99dadb73d39cc5f9312fcc8ae2465c61f6bbf4bc6a1e3bbeb692f881805449b961457700f8b74bb3376941872db73de3e8b551254f7b0b4331
+  checksum: 10c0/d7cf8386eb10b7807e148f4bb200babe3f5875aae2af4748993435075418427e05af95d36c758359aee5c30c4826197cd30327695c5a61d5dd40d22268dfe652
   languageName: node
   linkType: hard
 
@@ -413,6 +414,33 @@ __metadata:
   version: 1.5.0
   resolution: "@jridgewell/sourcemap-codec@npm:1.5.0"
   checksum: 10c0/2eb864f276eb1096c3c11da3e9bb518f6d9fc0023c78344cdc037abadc725172c70314bdb360f2d4b7bffec7f5d657ce006816bc5d4ecb35e61b66132db00c18
+  languageName: node
+  linkType: hard
+
+"@maskito/core@npm:5.1.0":
+  version: 5.1.0
+  resolution: "@maskito/core@npm:5.1.0"
+  checksum: 10c0/607902848f13e3801739435a1548d88fec8eaaea231f9c86d753d3f9f1b1b3fe4e3f142b049c36dddf737cdbd18868e6c3ce1a30eb3f38baaaa252d6a653dfb1
+  languageName: node
+  linkType: hard
+
+"@maskito/kit@npm:5.1.0":
+  version: 5.1.0
+  resolution: "@maskito/kit@npm:5.1.0"
+  peerDependencies:
+    "@maskito/core": ^5.1.0
+  checksum: 10c0/ce368577bf7ae12e179d44697c74869177ad7aeedb2d5c659b4b6e7e2ae3011b45c2f9d111f184082e8a9d9967140b37e159a8b9d8333d7f08a91c023a236bb0
+  languageName: node
+  linkType: hard
+
+"@maskito/react@npm:5.1.0":
+  version: 5.1.0
+  resolution: "@maskito/react@npm:5.1.0"
+  peerDependencies:
+    "@maskito/core": ^5.1.0
+    react: ">=16.8"
+    react-dom: ">=16.8"
+  checksum: 10c0/3277b822459990c4fecaf47b61a0f2fcd5a39dc8e1b77bc81c463a746ababfa07d6ae10c208893bb856079083c8e56aae5ff403036f966f31983af3daac050e7
   languageName: node
   linkType: hard
 
@@ -1137,10 +1165,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"classnames@npm:2.5.1":
-  version: 2.5.1
-  resolution: "classnames@npm:2.5.1"
-  checksum: 10c0/afff4f77e62cea2d79c39962980bf316bacb0d7c49e13a21adaadb9221e1c6b9d3cdb829d8bb1b23c406f4e740507f37e1dcf506f7e3b7113d17c5bab787aa69
+"clsx@npm:2.1.1":
+  version: 2.1.1
+  resolution: "clsx@npm:2.1.1"
+  checksum: 10c0/c4c8eb865f8c82baab07e71bfa8897c73454881c4f99d6bc81585aecd7c441746c1399d08363dc096c550cceaf97bd4ce1e8854e1771e9998d9f94c4fe075839
   languageName: node
   linkType: hard
 
@@ -2829,17 +2857,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:15.8.1":
-  version: 15.8.1
-  resolution: "prop-types@npm:15.8.1"
-  dependencies:
-    loose-envify: "npm:^1.4.0"
-    object-assign: "npm:^4.1.1"
-    react-is: "npm:^16.13.1"
-  checksum: 10c0/59ece7ca2fb9838031d73a48d4becb9a7cc1ed10e610517c7d8f19a1e02fa47f7c27d557d8a5702bec3cfeccddc853579832b43f449e54635803f277b1c78077
-  languageName: node
-  linkType: hard
-
 "proxy-addr@npm:^2.0.7":
   version: 2.0.7
   resolution: "proxy-addr@npm:2.0.7"
@@ -2913,7 +2930,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:^16.13.1, react-is@npm:^16.8.1":
+"react-is@npm:^16.8.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: 10c0/33977da7a5f1a287936a0c85639fec6ca74f4f15ef1e59a6bc20338fc73dc69555381e211f7a3529b8150a1f71e4225525b41b60b52965bda53ce7d47377ada1
@@ -3718,13 +3735,6 @@ __metadata:
   version: 5.2.10
   resolution: "what-input@npm:5.2.10"
   checksum: 10c0/7a2e007b589ac9966725e26d490276fa403b33bb5e9cf21e3f4ab5c61cdee4ec5f05acce781981a6cfccb102e662f8df97b0c3d387bd054d7ec0b251bfdd0731
-  languageName: node
-  linkType: hard
-
-"what-input@npm:5.2.12":
-  version: 5.2.12
-  resolution: "what-input@npm:5.2.12"
-  checksum: 10c0/151d30f6f97c20e4703cb1db93ec05a496cd3efdb27917a03f897da445132144c505203d814e00adf4227a70a521531ff8705d23ce5ed9bb5e91831ac2d775f2
   languageName: node
   linkType: hard
 
